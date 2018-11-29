@@ -1,0 +1,545 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900);
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/*
+    Globals
+*/
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    color: #505050;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.no-border {
+    border: 0 none !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.flex-content{
+    display: flex;
+}
+
+.crunchie-btn{
+    background: #fff;
+    color: #ff780a;
+    border: 1px solid #ff780a !important;
+}
+.crunchie-btn:hover, .crunchie-btn:focus, .crunchie-btn.active{
+    background: #ff780a;
+    color: #fff !important;
+    outline: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/*
+    Custom checkboxes/radio buttons
+*/
+
+.custom-checkbox label, .gfield_radio li label {
+    text-transform: uppercase;
+    font-weight: 100;
+    padding: 5px 12px;
+    -moz-transition: background 0.3s;
+    -o-transition: background 0.3s;
+    -webkit-transition: background 0.3s;
+    transition: background 0.3s;
+}
+
+.custom-checkbox, .gfield_radio li {
+    display: inline-block;
+    margin-right: 1%;
+}
+.custom-checkbox label, .gfield_radio li label {
+    width: auto;
+    border: 1px #ff780a solid;
+    color: #ff780a;
+    background: #fff;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.custom-checkbox label:hover, .gfield_radio li label:hover {
+    border-color: #ff780a;
+    color: #ff780a;
+}
+.custom-checkbox label:active, .gfield_radio li label:active {
+    border-color: #ff780a;
+    color: #ff780a;
+}
+.custom-checkbox input[type="checkbox"], .gfield_radio li input[type="checkbox"] {
+    display: none;
+}
+.custom-checkbox input[type="checkbox"]:checked + label, .gfield_radio li input[type="checkbox"]:checked + label {
+    background: #ff780a;
+    color: #fff;
+    border-color: #ff780a;
+}
+.custom-checkbox input[type="radio"], .gfield_radio li input[type="radio"] {
+    display: none;
+}
+.custom-checkbox input[type="radio"]:checked ~ label, .gfield_radio li input[type="radio"]:checked ~ label {
+    background: #ff780a;
+    color: #fff;
+    border-color: #ff780a;
+}
+
+.custom-checkbox input[type="radio"], .gfield_radio li input[type="radio"] {
+    display: none;
+}
+.custom-checkbox input[type="radio"]:checked ~ label, .gfield_radio li input[type="radio"]:checked ~ label {
+    background: #ff780a;
+    color: #fff;
+    border-color: #ff780a;
+}
+
+
+/**/
+
+
+
+/*
+    Typography
+*/
+
+a {
+    color: #ff780a;
+}
+
+a:hover, a:active, a:focus {
+    outline: 0;
+    color: #ff780a;
+    text-decoration: underline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.h5{
+    font-size: 13px;
+}
+.sm-txt{
+    font-size: 12px;
+}
+.green-txt{
+    color: #008000;
+}
+.red-txt{
+    color: #ff0000;
+}
+/*
+    Spaces
+*/
+
+.height-5 {
+    height: 5px;
+    clear: both;
+}
+.height-10 {
+    height: 10px;
+    clear: both;
+}
+
+.height-15 {
+    height: 15px;
+    clear: both;
+}
+
+.height-20 {
+    height: 20px;
+    clear: both;
+}
+.height-25 {
+    height: 25px;
+    clear: both;
+}
+
+.height-30 {
+    height: 30px;
+    clear: both;
+}
+
+.height-35 {
+    height: 35px;
+    clear: both;
+}
+.height-40 {
+    height: 40px;
+    clear: both;
+}
+.height-45 {
+    height: 45px;
+    clear: both;
+}
+.height-50 {
+    height: 50px;
+    clear: both;
+}
+.height-55 {
+    height: 55px;
+    clear: both;
+}
+.pt-1{
+    padding-top: 1px;
+}
+.mr-3{
+    margin-right: 3px;
+}
+
+/*
+    Colors / background-colors
+*/
+
+.dark-bg{
+    background: #3f4b56;
+}
+.light-grey-bg{
+    background: #e1e1e1;
+}
+
+/*
+    Custom Loader
+*/
+
+.loader {
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border: 3px solid #ddd;
+    border-top: 3px solid #42a5f5;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+}
+
+@-webkit-keyframes spin {
+    to {
+        border-top-color: #ec407a;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/**/
+/*
+    Main Styles
+*/
+
+/*
+    Header
+*/
+
+header.platform-header{
+    padding: 10px 0;
+}
+
+header.platform-header .navbar{
+    margin-bottom: 0;
+}
+
+header.platform-header .navbar .navbar-collapse .navbar-nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    background: none;
+}
+header.platform-header .navbar .navbar-collapse .navbar-nav>li>a:hover,
+header.platform-header .navbar .navbar-collapse .navbar-nav>li>a:focus,
+header.platform-header .navbar .navbar-collapse .navbar-nav>li>a:active{
+    background: none;
+    color: #bcb7b7;
+}
+header.platform-header .navbar .dropdown-menu, header.platform-header .logged-user-info li ul.dropdown-menu{
+    background: #3f4b56;
+}
+header.platform-header .navbar .dropdown-menu li{
+    margin: 5px 0;
+}
+header.platform-header .navbar .dropdown-menu li a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+header.platform-header .logged-user-info{
+    margin-top: 12px;
+}
+header.platform-header .logged-user-info li a{
+    color: #fff;
+    font-size: 12px;
+}
+header.platform-header .logged-user-info li ul.dropdown-menu{
+
+}
+
+header.platform-header .navbar .dropdown-menu li a:hover,
+header.platform-header .logged-user-info li ul.dropdown-menu>li>a:hover{
+    background: none;
+    color: #ff780a;
+}
+
+/**/
+
+/*
+    Main Content
+*/
+
+/*
+    Login Panel
+*/
+
+.login-panel.panel-default{
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.login-panel.panel-default > .panel-heading {
+    color: #fff;
+    background-color: #ff780a;
+    border: none;
+}
+.login-panel.panel-default .welcoming-txt p{
+    color: #2f3951;
+}
+.login-panel.panel-default input:focus {
+    border-color: #ff780a;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 120, 10, 0.82);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 120, 10, 0.47);
+}
+/**/
+
+.home-page-content .panel-default{
+    padding: 10px;
+}
+.home-page-content .panel-default .panel-title{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    background: rgb(63, 75, 86);
+    padding: 15px 10px;
+    border-radius: 3px;
+}
+.home-page-content .flex-content span{
+    flex: 1;
+}
+.home-page-content .flex-content input{
+    flex: 5;
+    margin-right: 5px;
+}
+.home-page-content .flex-content select{
+    flex: 2;
+}
+.main-content h4, .main-content.advertisers-list h4, .main-content h4.light-title{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+.main-content.create-campaign-page .client-filter .filtered-data .list-group-item{
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.main-content .panel{
+    margin-bottom: 0;
+}
+.main-content .xs-div{
+    width: 25%;
+}
+
+.main-content .panel-default>.panel-heading {
+    color: #fff;
+    background-color: #3f4b56;
+    border-color: #3f4b56;
+}
+.main-content p.h5{
+    font-weight: 600;
+}
+.main-content p.content-title{
+    background: #e1e1e1;
+    padding: 8px 0 8px 10px;
+    border-radius: 3px;
+}
+
+.main-content ul.setup-filters{
+    padding: 0 13px;
+}
+
+.main-content ul.setup-filters li{
+    flex: 1;
+    margin: 0 2px;
+}
+.main-content ul.setup-filters li select{
+    width: 55%;
+}
+.main-content textarea{
+    height: 71px;
+    resize: vertical;
+}
+.main-content .partner-cpa, .main-content .partner-currency{
+    width: 18%;
+}
+.main-content .custom-checkbox ul li{
+    display: inline-block;
+}
+
+.main-content .mobile-settings .btn{
+    margin: 0 5px 10px 0;
+}
+
+/*
+    Advertisers List Page Styles
+*/
+
+.main-content.advertisers-list table.table-bordered.dataTable th,
+.main-content.advertisers-list table.table-bordered.dataTable td{
+    font-size: 11px;
+}
+.main-content.advertisers-list table.table-bordered.dataTable p.ip-list-container{
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main-content.advertisers-list table.table-bordered.dataTable .edit-btn{
+    color: #ff780a;
+    cursor: pointer;
+}
+.main-content.advertisers-list .list-filters{
+    padding: 5px;
+}
+.main-content.advertisers-list .list-filters ul li{
+    margin: 5px 0;
+}
+.main-content.advertisers-list .list-filters ul li .btn{
+    margin: 0 3px;
+    padding: 5px 15px;
+}
+/**/
+
+/*
+    Publishers Section Styles
+*/
+
+.main-content.publishers-list .partner-setup-links .partner-setup li,
+.main-content.publishers-list .tabs .tab-links li{
+    display: inline-block;
+    margin-right: 15px;
+    -webkit-box-shadow: 0 0 5px 1px rgba(225,225,225,1);
+    -moz-box-shadow: 0 0 5px 1px rgba(225,225,225,1);
+    box-shadow: 0 0 5px 1px rgba(225,225,225,1);
+    padding: 6px 15px 9px 15px;
+}
+.main-content.publishers-list .tabs .tab-links li{
+    cursor: pointer;
+}
+.main-content.publishers-list .tabs .tab-links li:hover a{
+    text-decoration: none;
+}
+.main-content.publishers-list .tabs .tab-links li.active{
+    background: #ff780a;
+}
+.main-content.publishers-list .tabs .tab-links li.active a{
+    color: #fff;
+    text-decoration: none;
+}
+.main-content.publishers-list .am-info{
+    padding-top: 8px;
+}
+.main-content.publishers-list .am-info ul li{
+    display: inline-block;
+}
+.main-content.publishers-list .passive-partners{
+    display: none;
+}
+.main-content.publishers-list #activePartners .options-list-container{
+    cursor: pointer;
+}
+.main-content.publishers-list #activePartners .options-list-container p{
+    color: #ff780a;
+}
+.main-content.publishers-list #passivePartners .options-inline-list-container ul li{
+    display: inline-block;
+    border-right: 1px solid #ccc;
+    padding: 0 3px;
+}
+.main-content.publishers-list #passivePartners .options-inline-list-container ul li:last-child{
+    border: none;
+}
+.main-content.publisher-create .sm-content .list-group{
+    height: 210px;
+    overflow-y: scroll;
+}
+.main-content.publisher-create .sm-content .list-group .list-group-item{
+    padding: 5px 15px;
+    font-size: 13px;
+}
+.main-content.publisher-create .global-postback span{
+    margin-top: 5px;
+}
+.main-content.publisher-create .global-postback select{
+    flex-basis: 10%;
+}
+.main-content.publisher-create #goToEdit{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.main-content.publisher-placementstats .sm-div{
+    width: 50%;
+}
+.main-content.publisher-placementstats .filters{
+    padding-left: 15px;
+}
+.main-content.publisher-placementstats .sm-div input, .main-content.publisher-placementstats .sm-div a{
+    flex: 1;
+}
+.main-content.publisher-placementstats .sm-div a{
+    -webkit-box-shadow: 0 0 5px 1px rgba(225,225,225,1);
+    -moz-box-shadow: 0 0 5px 1px rgba(225,225,225,1);
+    box-shadow: 0 0 5px 1px rgba(225,225,225,1);
+    padding: 6px 15px 0 15px;
+    border-radius: 3px;
+}
+.main-content.publisher-placementstats .table-responsive .dataTables_filter label{
+    display: none;
+}
+.main-content.publisher-placementmissing .range-picker{
+    margin-left: 15px;
+}
+.main-content.publisher-placementmissing table.table-bordered.dataTable th{
+    font-size: 12px;
+}
+
+/**/
+
+/**/
